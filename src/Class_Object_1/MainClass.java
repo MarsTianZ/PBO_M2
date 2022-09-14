@@ -6,7 +6,7 @@ package Class_Object_1;
 
 /**
  *
- * @author naufal
+ * @author Marsa Kristian
  */
 public class MainClass {
     

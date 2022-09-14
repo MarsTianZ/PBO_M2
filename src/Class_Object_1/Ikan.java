@@ -6,7 +6,7 @@ package Class_Object_1;
 
 /**
  *
- * @author naufa
+ * @author Marsa Kristian
  */
 public class Ikan {
     
