@@ -7,7 +7,7 @@ package Class_Object_1;
 /**
  *
  * @author Marsa Kristian
- */
+ *///
 public class MainClass {
     
     public static void main(String[] args) {

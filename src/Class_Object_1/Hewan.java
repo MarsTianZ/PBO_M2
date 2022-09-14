@@ -8,7 +8,7 @@ package Class_Object_1;
 /**
  *
  * @author Marsa Kristian
- */
+ *///
 public class Hewan {
     //atribut /data
     private String tipe, suara;

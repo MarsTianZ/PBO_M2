@@ -7,7 +7,7 @@ package Class_Object_2;
 /**
  *
  * @author naufa
- */
+ *///
 public class Handphone {
     private String tipe,warna, kapasitas;
     

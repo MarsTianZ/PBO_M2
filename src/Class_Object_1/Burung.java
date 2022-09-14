@@ -7,7 +7,7 @@ package Class_Object_1;
 /**
  *
  * @author Marsa Kristian
- */
+ *///
 public class Burung {
     //tidak ada atribut
     

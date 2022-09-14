@@ -7,7 +7,7 @@ package Class_Object_2;
 /**
  *
  * @author naufa
- */
+ *///
 public class Samsung {
     
     private int harga, jumlah, total;
