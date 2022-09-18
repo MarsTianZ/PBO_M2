@@ -6,7 +6,7 @@ package Class_Object_2;
 import java.io.*;
 /**
  *
- * @author naufal
+ * @author Marsa Kristian
  *///
 public class MainClass {
     

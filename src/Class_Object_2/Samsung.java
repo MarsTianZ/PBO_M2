@@ -6,7 +6,7 @@ package Class_Object_2;
 
 /**
  *
- * @author naufa
+ * @author Marsa Kristian
  *///
 public class Samsung {
     
