@@ -78,7 +78,5 @@ class Mahasiswa extends Undika{
 
     public void setBayar_spp_semester(int bayar_spp_semester) {
         this.bayar_spp_semester = bayar_spp_semester;
-    }
-        
-        
+    }      
 }

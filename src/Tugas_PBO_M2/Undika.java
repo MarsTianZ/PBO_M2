@@ -31,8 +31,4 @@ class Undika {
     public void setalamat(String alamat) {
         this.alamat = alamat;
     }
-    
-    
-    
-    
 }
