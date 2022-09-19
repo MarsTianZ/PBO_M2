@@ -31,10 +31,10 @@ public class Main_Class {
             System.out.println("||  0: Keluar Aplikasi                       ||");
             System.out.println("===============================================");
             System.out.print("  Silahkan Tentukan Pilihan Menu : ");
-            System.out.println("");
             int pilih = input1.nextInt();
             switch(pilih){
                     case 1: //Menu 1: Cek SPP Mahasiswa
+                        System.out.println("");
                         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.print("Input Nama Mahasiswa : ");
                         stikom.setNama(input.nextLine());
