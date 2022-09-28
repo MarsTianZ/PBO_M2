@@ -22,7 +22,7 @@ public class Akun {
     //user admin sudah ditentukan username dan passwordnya
     public Akun (String u, String p){
         username = u;
-        password = p;
+        password = p;   
     }
     
     public Akun (String p){
