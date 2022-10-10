@@ -124,7 +124,7 @@ public class main {
                 }
                 case 3: {
                     System.exit(0);
-                    continue;
+                    break;
                 }
             }
         }
