@@ -42,6 +42,7 @@ public class main {
             System.out.println("~ Pilihan Maskapai = ");
             int tipepesawat = input1.nextInt();
             System.out.println("");
+            System.out.println("");
             Lion_Air[] pesawat1 = new Lion_Air[jmlhPenumpang];
             Citilink[] pesawat2 = new Citilink[jmlhPenumpang];
             switch (tipepesawat) {
