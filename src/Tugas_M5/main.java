@@ -22,24 +22,24 @@ public class main {
         Scanner input1 = new Scanner(System.in);
         String tglKembali = "";
         int total = 0;
-        while (true) {
+        do {
             System.out.println("===== Selamat datang di Pembelian Tiket Pesawat =====");
             System.out.print("~ Jumlah Penumpang Pesawat = ");
             int jmlhPenumpang = input1.nextInt();
             System.out.println("");
             System.out.print("~ Kota Asal = ");
             String kotaAsal = input.nextLine();
-            System.out.println("\n~ Rute = \n1. Balikpapan \n2. Surabaya \n3. Makassar \n4. Jakarta \n5. Bali \n6. Yogyakarta \n7. Lombok");
-            System.out.print("~ Tujuan = ");
+            System.out.print("\n~ Rute = \n1. Balikpapan \n2. Surabaya \n3. Makassar \n4. Jakarta \n5. Bali \n6. Yogyakarta \n7. Lombok");
+            System.out.print("~ Kota Tujuan = ");
             String kotaTujuan = input.nextLine();
             System.out.print("~ Tanggal Berangkat = ");
             String tglBerangkat = input.nextLine();
-            System.out.println("~ Tanggal Kembali = ");
+            System.out.print("~ Tanggal Kembali = ");
             tglKembali = input.nextLine();
             System.out.println("");
             System.out.println("");
             System.out.println("\n1. Lion Air \n2. Citilink");
-            System.out.println("~ Pilihan Maskapai = ");
+            System.out.print("~ Pilihan Maskapai = ");
             int tipepesawat = input1.nextInt();
             System.out.println("");
             System.out.println("");
@@ -82,7 +82,7 @@ public class main {
                         System.out.println("");
                     }
                     System.out.println("Total = " + total);
-                    continue;
+                    break;
                 }
                 case 2: {
                     System.out.println("==CITILINK==");
@@ -121,13 +121,14 @@ public class main {
                     }
                     System.out.println("Total: " + total);
                     System.out.println("");
-                    continue;
+                    break;
                 }
                 case 3: {
                     System.exit(0);
                     break;
                 }
             }
-        }
+        }while(true);
     }
 }
+
