@@ -15,12 +15,12 @@ public class Citilink extends Tiket {
     private String kotaTujuan, nmrPesawat, nmrKursi;
     
     //Constructor
-    public Citilink(int jumlahPenumpang, int harga, String kotaTujuan, String noPesawat, String noKursi, String bookingID, String nik, String nama, String jenis_kelamin, String tglBerangkat, String tglKembali, String kotaAsal) {
+
+    public Citilink(int jmlhPenumpang, String kotaTujuan, String nmrPesawat, String nmrKursi, String bookingID, String nik, String nama, String jenis_kelamin, String tglBerangkat, String tglKembali, String kotaAsal) {
         super(bookingID, nik, nama, jenis_kelamin, tglBerangkat, tglKembali, kotaAsal);
         this.jmlhPenumpang = jmlhPenumpang;
-        this.harga = harga;
         this.kotaTujuan = kotaTujuan;
-        this.nmrPesawat = noPesawat;
+        this.nmrPesawat = nmrPesawat;
         this.nmrKursi = nmrKursi;
     }
 
@@ -41,35 +41,42 @@ public class Citilink extends Tiket {
     }
     
         public int getHarga() {
-            if (kotaAsal.equalsIgnoreCase("Surabaya")) {
-            if (kotaTujuan.equalsIgnoreCase("Bali") && kotaTujuan.equalsIgnoreCase("Lombok")) {
+            if (getKotaAsal().equalsIgnoreCase("Surabaya")) {
+            if (getKotaTujuan().equalsIgnoreCase("Bali") || getKotaTujuan().equalsIgnoreCase("Lombok")) {
                 this.harga = 700000;
-            } else if (kotaTujuan.equalsIgnoreCase("Jakarta") && kotaTujuan.equalsIgnoreCase("Yogyakarta")) {
+            } else if (getKotaTujuan().equalsIgnoreCase("Jakarta") || getKotaTujuan().equalsIgnoreCase("Yogyakarta")) {
                 this.harga = 800000;
-            } else if (kotaTujuan.equalsIgnoreCase("Balikpapan") && kotaTujuan.equalsIgnoreCase("Makassar")) {
+            } else if (getKotaTujuan().equalsIgnoreCase("Balikpapan") || getKotaTujuan().equalsIgnoreCase("Makassar")) {
                 this.harga = 850000;
             } else {
                 this.harga = 0;
             }
-        } else if (kotaAsal.equalsIgnoreCase("Jakarta")) {
-            if (kotaTujuan.equalsIgnoreCase("Bali") && kotaTujuan.equalsIgnoreCase("Lombok")) {
+        } else if (getKotaAsal().equalsIgnoreCase("Jakarta")) {
+            if (getKotaTujuan().equalsIgnoreCase("Bali") || getKotaTujuan().equalsIgnoreCase("Lombok")) {
                 this.harga = 1000000;
-            } else if (kotaTujuan.equalsIgnoreCase("Surabaya") && kotaTujuan.equalsIgnoreCase("Yogyakarta")) {
+            } else if (getKotaTujuan().equalsIgnoreCase("Surabaya") || getKotaTujuan().equalsIgnoreCase("Yogyakarta")) {
                 this.harga = 750000;
-            } else if (kotaTujuan.equalsIgnoreCase("Balikpapan") && kotaTujuan.equalsIgnoreCase("Makassar")) {
+            } else if (getKotaTujuan().equalsIgnoreCase("Balikpapan") || getKotaTujuan().equalsIgnoreCase("Makassar")) {
                 this.harga = 900000;
             } else {
                 this.harga = 0;
             }
-        } else {
-            this.harga = 0;
         } 
+        
         return harga;
     }
 
     public int getTotal() {
         this.total = getHarga() * this.jmlhPenumpang;
         return total;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
+
+    public void setNmrKursi(String nmrKursi) {
+        this.nmrKursi = nmrKursi;
     }
     
     

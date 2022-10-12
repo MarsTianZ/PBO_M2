@@ -52,4 +52,6 @@ public class Tiket {
     public String getKotaAsal() {
         return kotaAsal;
     }
+    
+    
 }
