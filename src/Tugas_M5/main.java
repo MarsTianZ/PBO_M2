@@ -3,10 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package Tugas_M5;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 /**
  *
