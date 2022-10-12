@@ -82,6 +82,7 @@ public class main {
                         System.out.println("");
                     }
                     System.out.println("Total = " + total);
+                    System.exit(0);
                     break;
                 }
                 case 2: {
@@ -121,9 +122,6 @@ public class main {
                     }
                     System.out.println("Total: " + total);
                     System.out.println("");
-                    break;
-                }
-                case 3: {
                     System.exit(0);
                     break;
                 }
