@@ -85,7 +85,7 @@ public class main {
                         System.out.println("");
                     }
                     System.out.println("Total = " + total);
-                    break;
+                    break;                       
                 case 2:
                     System.out.println("==CITILINK==");
                     for (int p=0; p<pesawat2.length; ++p) {
